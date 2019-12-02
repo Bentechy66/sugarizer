@@ -79,7 +79,7 @@ Once again we will have first to integrate a new dependance. So let's add the we
 	define(["sugar-web/activity/activity", "sugar-web/env", "sugar-web/graphics/icon", "webL10n"], function (activity, env, icon, webL10n) {
 
 
-The webL10n library is able to automatically detect the browser language. But in Sugarizer it's different because the language is decided by the user. So our activity have to initialize current language using the user choice. Once again we're going to use the environment feature to determine the user language. Our current `getEnvironment` call in `activity/activity.js` file is like this:
+The webL10n library is able to automatically detect the browser language. But in Sugarizer it's different because the language is decided by the user. So our activity has to initialize current language using the user choice. Once again we're going to use the environment feature to determine the user language. Our current `getEnvironment` call in `activity/activity.js` file is like this:
 
 	env.getEnvironment(function(err, environment) {
 		currentenv = environment;
@@ -141,7 +141,7 @@ In a same way, the pawn played message could be rewrite as:
 
 	document.getElementById("user").innerHTML = "<h1>"+webL10n.get("Played", {name:currentenv.user.name})+"</h1>";
 
-One point however: we need to wait to initialize strings that the `locale.ini` is read. It's possible because the webL10n framework raise a new `localized` event on the window when the language is ready.
+One point however: we need to wait to initialize strings that the `locale.ini` is read. This is possible because the webL10n framework raises a new `localized` event on the window when the language is ready.
 
 So we will now initialize the welcome message in the `localized` event listener like that, in the end of the require function of `activity/activity.js` file:
 
