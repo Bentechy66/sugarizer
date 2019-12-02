@@ -122,15 +122,15 @@ The presence framework provide a real time communication between a set of client
 
 In the context of Sugarizer, clients are Sugarizer App/WebApp connected to the Server. One topic is a shared activity. The Sugarizer Server is responsible to keep the list of topics and clients and dispatch messages to clients subscribed to topics. So the server is the central point and in fact, clients communicate only with the server.
 
-Let's take an example. Michaël, Lionel and Bastien are three users connected to the same Sugarizer Server. Michaël share a Chat activity. Lionel decide to join the activity. Bastien share its own Paint activity but he's alone on the activity.
+Let's take an example. Michaël, Lionel and Bastien are three users connected to the same Sugarizer Server. Michaël shares a Chat activity. Lionel decides to join the activity. Bastien shares his own Paint activity but he's alone on the activity.
 
 ![](images/tutorial_step6_9.png)
 
 The server know that two activities are shared: one Chat activity with Michaël and Lionel as subscribers, one Paint activity with only Bastien as subscriber.
 
-If Michaël post a message for the Chat activity, the server will automatically send back the message to Michaël and Lionel but not to Bastien.
+If Michaël posts a message for the Chat activity, the server will automatically send back the message to Michaël and Lionel but not to Bastien.
 
-Easy to understand isn't it?
+Easy to understand, isn't it?
 
 
 ### Share the instance
@@ -155,7 +155,7 @@ Now, let's update our Pawn activity to integrate presence. Start first by handli
 		});
 	});
 
-In this listener, we have to retrieve the presence object. As usual it's exposed by the `activity` object. So you just need a call to `activity.getPresenceObject` method. If everything goes well, you will retrieve a presence object. That's a way to indicate that you're connected to a server.
+In this listener, we have to retrieve the presence object. As usual it's exposed by the `activity` object. So you just need a call to the `activity.getPresenceObject` method. If everything goes well, you will retrieve a presence object. That's a way to indicate that you're connected to a server.
 
 The `createSharedActivity` on this object allow you to create a new shared activity. You must pass as parameter the type of the activity so Sugarizer could display the right icon in the neighborhood view. Then you receive the unique identifier of the share in the `groupId` parameter of the callback.
 
