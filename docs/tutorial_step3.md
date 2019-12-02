@@ -15,7 +15,7 @@ Here is the icon we will use. It's just a stylized plus sign.
 
 ![](images/tutorial_step3_1.png)
 
-You could download it [here](images/add.svg). Right-click on it and then save it as a SVG file in `icons/add.svg`.
+You could download it [here](images/add.svg). Right-click on it and then save it as a SVG file in `Pawn.activity/icons/add.svg`.
 
 ***Warning***: *The plus sign is white on a transparent background so you will see nothing if you display it on a white background.*
 
