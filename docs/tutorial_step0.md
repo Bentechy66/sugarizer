@@ -31,11 +31,11 @@ To run Sugarizer locally in Chrome, close any running instances of Chrome and re
 
 * On this line `chrome` is the name of the Chrome executable file. Depending of your system it could be `google-chrome` or `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"` or `open -n /Applications/Google\ Chrome.app --args` instead.
 
-* The option `--allow-file-access-from-files` is required to enable access to local files using XMLHttpRequest. Equivalent options for other browser [are available](https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally).
+* The option `--allow-file-access-from-files` is required to enable access to local files using XMLHttpRequest. Equivalent options for other browsers [are available](https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally).
 
-* The `index.html` file is located in the new Sugarizer directory so you will have to use `cd` command line to change location to this directory before running the command.
+* The `index.html` file is located in the new Sugarizer directory so you will have to use the `cd` command on the command line to change location to this directory before running the command.
 
-If everything is right, you should see something like that:
+If everything is right, you should see something like this:
 
 ![](images/tutorial_step0_0.png)
 
